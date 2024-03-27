@@ -25,10 +25,10 @@ function App() {
         </nav>
       </div>
       <Routes>
-        <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
-        <Route exact path="/" component={AuctionList} />
-        <Route path="/auction/:id" component={Auction} />
+        <Route path="/login" element={ <Login />} />
+        <Route path="/register" element={ <Register />} />
+        <Route exact path="/" element={ <AuctionList />} />
+        <Route path="/auction/:id" element={ <Auction />} />
       </Routes>
     </Router>
   );
